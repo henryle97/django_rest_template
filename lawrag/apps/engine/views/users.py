@@ -53,6 +53,7 @@ class UserViewSet(
     mixins.UpdateModelMixin,
 ):
     queryset = User.objects.prefetch_related("groups").all()
+    ttp_method_names = ["get", "post", "head", "patch", "options"]
 
     def get_serializer_class(self):
         return UserSerializer
