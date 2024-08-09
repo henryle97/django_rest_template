@@ -2,6 +2,10 @@
 
 
 # Development
+- Setup pre-commit
+```
+pre-commit install 
+```
 
 - 1. Run debug by click at `server:django` debug option
 
