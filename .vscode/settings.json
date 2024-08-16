@@ -11,5 +11,10 @@
             "depth": 5,
             "includeAllSymbols": true
         },
+        {
+            "name": "dj_rest_auth",
+            "depth": 5,
+            "includeAllSymbols": true
+        },
     ],
 }
