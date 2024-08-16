@@ -1,8 +1,10 @@
 from django.apps import apps
+from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("", include("lawrag.apps.engine.urls")),
+    path("", include("app_name.apps.engine.urls")),
+    path("admin/", admin.site.urls),
 ]
 
 # if apps.is_installed("silk"):

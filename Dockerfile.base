@@ -22,7 +22,7 @@ ENV TERM=xterm \
     TZ=${TZ} \
     DEBIAN_FRONTEND=noninteractive
 
-ARG USER="lawrag"
+ARG USER="app_name"
 ARG DJANGO_CONFIGURATION="production"
 ENV DJANGO_CONFIGURATION=${DJANGO_CONFIGURATION}
 
@@ -85,7 +85,7 @@ RUN if [ ! -z "$pip_index_url" ] ; then \
     pip config set global.index ${pip_index}; \
     pip config set global.trusted-host ${pip_index_host}; \
 fi
-COPY lawrag/requirements/ /tmp/requirements/
+COPY app_name/requirements/ /tmp/requirements/
 
 RUN pip install --no-cache-dir --upgrade pip==21.2.4 setuptools==59.8.0 wheel==0.37.1
 RUN pip install --upgrade requests && pip install --no-cache-dir -r /tmp/requirements/${DJANGO_CONFIGURATION}.txt

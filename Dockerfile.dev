@@ -39,7 +39,7 @@ RUN chmod -R 777 /workspace
 #     && ./get_helm.sh
 
 # Install Python dependencies
-COPY lawrag/requirements /tmp/requirements
+COPY app_name/requirements /tmp/requirements
 RUN pip install --no-cache-dir --upgrade pip==21.2.4 setuptools==59.8.0 wheel==0.37.1 \
     && pip install --upgrade requests && pip install -r /tmp/requirements/development.txt
 

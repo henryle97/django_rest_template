@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from lawrag.apps.engine import models
+from app_name.apps.engine import models
 
 
 class Command(BaseCommand):

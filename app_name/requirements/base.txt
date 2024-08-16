@@ -50,5 +50,6 @@ uritemplate==3.0.1
 protobuf==3.20.3
 PyYAML
 kfp==1.8.19
-django-rest-auth==0.9.5
 hiredis==2.2.2
+dj-rest-auth==5.1.0
+django-allauth[socialaccount]==64.1.0

@@ -1,7 +1,7 @@
 {
 	"name": "devcontainer",
 	"dockerComposeFile": "../docker-compose.dev.yml",
-	"service": "lawrag",
+	"service": "app_name",
 	"workspaceFolder": "/workspace",
 	"updateRemoteUserUID": false,
 	"customizations": {

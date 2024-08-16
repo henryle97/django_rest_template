@@ -5,13 +5,12 @@ from drf_spectacular.utils import (
     extend_schema,
     extend_schema_view,
 )
+from lawrag.apps.engine.models import User
+from lawrag.apps.engine.serializers.users import UserSerializer
 from rest_framework import generics, mixins, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
-
-from lawrag.apps.engine.models import User
-from lawrag.apps.engine.serializers.users import UserSerializer
 
 
 @extend_schema(tags=["users"])
